@@ -1,8 +1,22 @@
 import React from 'react'
 import "./HomePage.css"
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import PlaceCard from '../../components/Place/Place'
 import ArticleCard from '../../components/Article/Article'
+
+import place_image_01 from '../../images/place-01.png'
+import place_image_02 from '../../images/place-02.png'
+import place_image_03 from '../../images/place-03.png'
+import place_image_04 from '../../images/place-03.png'
+
+import article_image_01 from '../../images/article-01.png'
+import article_image_02 from '../../images/article-02.png'
+import article_image_03 from '../../images/article-03.png'
+import article_image_04 from '../../images/article-03.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -22,6 +36,33 @@ import product_img_06 from "../../images/product-photo-06-in-home-page.png"
 import product_img_07 from "../../images/product-photo-07-in-home-page.png"
 
 function HomePage() {
+
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 0
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
   return (
     <div>
       <div className='home-page'>
@@ -42,8 +83,12 @@ function HomePage() {
           <div class="section-content-container">
             <h2 className='section-title'>Discover Us</h2>
             <div className='places-carousel'>
-              <PlaceCard />
-              {/* <PlaceCard /> */}
+              <Slider {...settings} className='places-slider'>
+                <PlaceCard className="place-card" props={{ image: place_image_01, place_title: "Lunuwila", place_address: "No. 45, North Sea, Colombo.", place_phone: "0113434377" }} />
+                <PlaceCard className="place-card" props={{ image: place_image_02, place_title: "Weerawila", place_address: "No. 45, North Sea, Colombo.", place_phone: "0113434377" }} />
+                <PlaceCard className="place-card" props={{ image: place_image_03, place_title: "Jaffna", place_address: "No. 45, North Sea, Colombo.", place_phone: "0113434377" }} />
+                <PlaceCard className="place-card" props={{ image: place_image_04, place_title: "Jaffna", place_address: "No. 45, North Sea, Colombo.", place_phone: "0113434377" }} />
+              </Slider>
             </div>
           </div>
         </div>
@@ -113,8 +158,12 @@ function HomePage() {
           <div class="section-content-container">
             <h2 className='section-title'>Featured Articles</h2>
             <div className='article-carousel'>
-              <ArticleCard />
-              {/* <ArticleCard /> */}
+              <Slider {...settings} className='articles-slider'>
+                <ArticleCard className="article-card" props={{ image: article_image_01, article_title: "Teaching the Next Generation: Fishing Net Donations for Youth Education", article_content: "North Sea LTD believes in nurturing the passion for fishing among young minds. Our fishing net donation program supports educational initiatives for aspiring fishermen." }} />
+                <ArticleCard className="article-card" props={{ image: article_image_02, article_title: "Empowering Coastal Communities Through Fishing Net Donations", article_content: " At North Sea LTD, we are dedicated to making a positive impact on coastal communities through our fishing net donation initiatives." }} />
+                <ArticleCard className="article-card" props={{ image: article_image_03, article_title: "Supporting Sustainable Fishing: Our Fishing Net Recycling Program", article_content: "Sustainability is a cornerstone of North Sea LTD's ethos. Our innovative fishing net recycling program aims to minimize marine pollution." }} />
+                <ArticleCard className="article-card" props={{ image: article_image_04, article_title: "Supporting Sustainable Fishing: Our Fishing Net Recycling Program", article_content: "Sustainability is a cornerstone of North Sea LTD's ethos. Our innovative fishing net recycling program aims to minimize marine pollution." }} />
+              </Slider>
             </div>
           </div>
         </div>

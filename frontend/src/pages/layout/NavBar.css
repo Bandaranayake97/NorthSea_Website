@@ -96,7 +96,13 @@ a.active-link {
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
+    .logo-link {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
     #mobile {
         width: 100%;
         display: flex;

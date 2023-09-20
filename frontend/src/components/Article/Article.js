@@ -1,14 +1,16 @@
 import React from 'react'
 import './Article.css'
 
-const Article = () => {
+const Article = ({ props }) => {
     return (
         <div className='article-card'>
-            <div className='article-card-image'></div>
+            <div className='article-card-image'>
+                <img src={props.image} className='article-image' alt='featured article' />
+            </div>
             <div class="article-card-content">
-                <h4 className='article-title'>Teaching the Next Generation: Fishing Net Donations for Youth Education</h4>
+                <h4 className='article-title'>{props.article_title}</h4>
                 <p className='article-details'>
-                    North Sea LTD believes in nurturing the passion for fishing among young minds. Our fishing net donation program supports educational initiatives for aspiring fishermen.
+                    {props.article_content}
                 </p>
             </div>
         </div>
