@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './pages/layout/NavBar';
 import FooterBar from './pages/layout/FooterBar';
@@ -15,11 +15,27 @@ import SignUp from './pages/admin/SignUp';
 import Login from './pages/admin/Login';
 import AdminDashboard from './pages/admin/AdminDashboard';
 
-
 function App() {
+
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true)
+      } else {
+        setIsScrolled(false)
+      }
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }, [])
+
   return (
     <AuthProvider>
-      <NavBar />
+      <NavBar isScrolled={isScrolled} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<Aboutus />} />
@@ -33,7 +49,7 @@ function App() {
         <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
       <FooterBar />
-      </AuthProvider>
+    </AuthProvider>
   );
 }
 

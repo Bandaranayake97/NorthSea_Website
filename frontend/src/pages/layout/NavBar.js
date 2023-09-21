@@ -5,7 +5,7 @@ import { MdClose } from 'react-icons/md';
 import { NavLink } from 'react-router-dom'
 import logo from './logo.png';
 
-const NavBar = () => {
+const NavBar = ({ isScrolled }) => {
 
   const [clicked, setClicked] = useState(false);
 
@@ -15,20 +15,21 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className='navbar'>
+      <div className={`navbar ${isScrolled ? "opaque" : ""}`}>
 
         <div className={clicked ? 'desktop-nav' : 'desktop-nav active-mobile-nav'}>
-          <div className='logo1'>
-            <img src={logo} alt="logo"  width="50" height="50"  />
+          <div className='logo-section'>
+            <div className='logo1'>
+              <img src={logo} alt="logo" width="50" height="50" />
+            </div>
+            <div className='logo logo-desktop'>
+              <a href='/' className='logo-link'>North Sea</a>
+            </div>
           </div>
-          <div className='logo logo-desktop'>
-            <a href='/' className='logo-link'>North Sea</a>
-          </div>
-
 
           <div className='main-menu'>
             <ul className='nav-menu'>
-            <li className='nav-item'>
+              <li className='nav-item'>
                 <NavLink to="/" className={({ isActive }) =>
                   isActive ? "nav-link active-link" : "nav-link"
                 }>Home</NavLink>
