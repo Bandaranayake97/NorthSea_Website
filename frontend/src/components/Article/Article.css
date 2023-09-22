@@ -1,0 +1,36 @@
+.article-title {
+    color: white;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.article-card-content {
+    background-color: #535353;
+    max-width: 250px;
+}
+
+.article-details {
+    color: white;
+    margin-top: 0;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.article-card-image {
+    /* background-image: url("../../../assets/images/article-photo.png"); */
+    width: 250px;
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+}
+
+.article-image {
+    width: 100%;
+    /* background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
