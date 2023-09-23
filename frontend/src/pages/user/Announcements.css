@@ -1,3 +1,74 @@
 .heading-text {
     color: white;
 }
+
+.section-title {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36;
+    font-weight: 600;
+    text-align: center;
+}
+
+.tender-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.announcement-container {
+    flex: 2;
+}
+
+
+
+/* Styles for tender list */
+.tender-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bullet-icon {
+    margin-right: 8px;
+}
+
+/* Styles for announcement cards */
+.announcement-card {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.announcement-image {
+    flex: 1;
+}
+
+.announcement-image img {
+    width: 100%;
+    height: auto;
+}
+
+.announcement-content {
+    flex: 2;
+    padding: 16px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 480px) {
+    .announcement-content {
+        padding: 10px;
+    }
+}
+
+/* Media query for tablet view */
+@media (max-width: 768px) {
+    .announcement-page {
+        flex-direction: column;
+    }
+
+    .tender-container {
+        margin-right: 0;
+    }
+}
