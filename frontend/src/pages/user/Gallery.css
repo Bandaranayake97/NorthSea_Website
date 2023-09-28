@@ -32,15 +32,12 @@
     margin-bottom: 10px;
 }
 .gallery--section--row{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%; 
-    margin-top: 10px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 42.6px;
+    grid-template-columns: repeat(3, 1fr);
+    
     
 }
 .gallery--section--card{
@@ -50,28 +47,26 @@
     justify-content: center;
     width: 500px; 
     max-height: 600px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     gap:10px;
-    background: var(--bg-shade);
+    background: rgb(248, 248, 248);
+    
 }
 .gallery--section--card:hover {
-    border-bottom: 4px solid var(--primary);
-    color: var(--darkblue);
+    border-bottom: 4px solid rgb(162, 162, 177);
+    color: rgb(118, 118, 131);
     transition: all 0.3s ease-in-out;
   }
 .gallery--section--img{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 500px; 
     height: 300px;
-    padding: 10px;
-    gap:10px;
+    object-fit: cover;
+    
 }
 .gallery--section--img > img{
-    width: 400px;
+    width: 500px;
     max-height: 300px;
     object-fit: cover;
 }
@@ -80,8 +75,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
-    width: 400px; 
+    width: 500px; 
     padding-bottom: 10px;
     gap:10px;
 }
