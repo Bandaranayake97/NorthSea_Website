@@ -81,8 +81,17 @@
   .director-items{
     display: flex;
     justify-content: space-between;
-    gap:10px;
+   
  
+  }
+  .director-info{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    align-items: center;
+    text-align: center;
+    
+
   }
   .director-text{
     margin-top: 172px;
@@ -96,6 +105,31 @@
 
 
   }
+  
+ .management{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ } 
+
+ .management-title{
+    display: flex;
+    flex-direction: Row;
+    align-items: center;
+    gap:15px;
+    justify-content: center; 
+   
+ }
+
+ .management-title-text{
+    font-family: 'Popins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #031B46;
+    text-align: center;
+    padding: 41px;
+ }
 
 
 
