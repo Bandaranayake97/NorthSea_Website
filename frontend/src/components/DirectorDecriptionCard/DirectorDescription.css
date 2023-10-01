@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Popins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+.directD-card{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width: 720px;
+    height: 100%;
+    font-size: 30px;
+  
+
+}
+
+.directD-name{
+    font-family: 'Popins';
+    font-weight: 600;
+    color: #313030;
+    text-align: center;
+    justify-content: center;
+}
+.directD-post{
+    font-family: 'Popins', sans-serif;
+    font-weight: 900;
+    color: #313030;
+    text-align: center;
+    justify-content: center;
+    
+
+}
+.directD-ministry{
+    font-family: 'Popins', sans-serif;
+    font-weight: 600;
+    color: #313030;
+    text-align: center;
+    justify-content: center;
+}
+.directD-tel{
+    font-family: 'Popins', sans-serif;
+    font-weight: 600;
+    color: #313030;
+    text-align: center;
+    justify-content: center;
+}
+.directD-fax{
+    font-family: 'Popins', sans-serif;
+    font-weight: 600;
+    color: #313030;
+    text-align: center;
+    justify-content: center;
+}
+.directD-mail{
+    font-family: 'Popins', sans-serif;
+    font-weight: 600;
+    color: #313030;
+    text-align: center;
+    justify-content: center;
+}
