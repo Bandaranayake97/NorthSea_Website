@@ -1,0 +1,72 @@
+{
+    "gallery": [
+        {
+            "id": 1,
+            "src": "./gallery_images/article-01.png",
+            "title": "Gallery Image 1",
+            "description": "This is an sample description for the image shown here.This is an sample description for the image shown here.This is an sample description for the image shown here. ",
+            "date": "2015-01-01",
+            "alt": "Gallery Image 1"
+        },
+        {
+            "id": 2,
+            "src": "./gallery_images/article-02.png",
+            "title": "Gallery Image 2",
+            "description": "This is an sample description for the image shown here. ",
+            "date": "2015-01-01",
+            "alt": "Gallery Image 2"
+        },
+        {
+            "id": 3,
+            "src": "./gallery_images/article-03.png",
+            "title": "Gallery Image 3",
+            "description": "This is an sample description for the image shown here.This is an sample description for the image shown here. ",
+            "date": "2015-01-01",
+            "alt": "Gallery Image 3"
+        },
+        {
+            "id": 4,
+            "src": "./gallery_images/article-04.png",
+            "title": "Gallery Image 4",
+            "description": "This is an sample description for the image shown here.This is an sample description for the image shown here. ",
+            "date": "2015-01-01",
+            "alt": "Gallery Image 4"
+        },
+        {
+            "id": 5,
+            "src": "./gallery_images/article-01.png",
+            "title": "Gallery Image 5",
+            "description": "This is an sample description for the image shown here.This is an sample description for the image shown here.This is an sample description for the image shown here. ",
+            "date": "2015-01-01",
+            "alt": "Gallery Image 5"
+        },
+        {
+            "id": 6,
+            "src": "./gallery_images/article-02.png",
+            "title": "Gallery Image 6",
+            "description": "This is an sample description for the image shown here. ",
+            "date": "2015-01-01",
+            "alt": "Gallery Image 6"
+        },
+        {
+            "id": 7,
+            "src": "./gallery_images/article-03.png",
+            "title": "Gallery Image 7",
+            "description": "This is an sample description for the image shown here. ",
+            "date": "2015-01-01",
+            "alt": "Gallery Image 7"
+        }
+    ],
+    "joinus": [
+        {
+            "id": 1,
+            "description": "This is an sample description for this section shown here.This is an sample description for this section shown here.This is an sample description for this section shown here.This is an sample description for this section shown here.This is an sample description for this section shown here. "
+
+        },
+        {
+            "id": 2,
+            "description": "This is an sample description for this section shown here.This is an sample description for this section shown here.This is an sample description for this section shown here.This is an sample description for this section shown here.This is an sample description for this section shown here. "
+
+        }
+    ]
+}
