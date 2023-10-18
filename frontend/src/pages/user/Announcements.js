@@ -8,16 +8,14 @@ import "slick-carousel/slick/slick-theme.css";
 
 import announcementImage from "../../images/hiring.jpeg";
 
+import HeroSection from '../../components/Hero/HeroSection';
+
 function Announcements() {
   return (
     <div className="announcement-page">
-      <div className="home-hero">
-        <div className="section-content-container">
-          <h1 className="hero-text">
-            <span className="block-text">Announcements</span>
-          </h1>
-        </div>
-      </div>
+      <HeroSection>
+        <h1 className='hero-text-home'><span className='block-text'>Announcements</span></h1>
+      </HeroSection>
 
 
       {/*   <h2 className="noTenders">No tenders or announcements available 
@@ -33,8 +31,7 @@ function Announcements() {
               <BsFillBookmarkFill size={25} />
             </span>
             About the tender detail should include here. About the tender detail
-            should include here. About the tender detail should include here.
-            About the tender detail should include here.
+            should include here.
           </p>
 
           <p className="tender-item">
@@ -42,8 +39,7 @@ function Announcements() {
               <BsFillBookmarkFill size={25} />
             </span>
             About the tender detail should include here. About the tender detail
-            should include here. About the tender detail should include here.
-            About the tender detail should include here.
+            should include here.
           </p>
 
           <p className="tender-item">
@@ -51,16 +47,14 @@ function Announcements() {
               <BsFillBookmarkFill size={25} />
             </span>
             About the tender detail should include here. About the tender detail
-            should include here. About the tender detail should include here.
-            About the tender detail should include here.
+            should include here.
           </p>
           <p className="tender-item">
             <span className="bookmark-icon">
               <BsFillBookmarkFill size={25} />
             </span>
             About the tender detail should include here. About the tender detail
-            should include here. About the tender detail should include here.
-            About the tender detail should include here.
+            should include here.
           </p>
 
           {/* Add more tender items as needed */}
@@ -86,8 +80,7 @@ function Announcements() {
             <h3 className="announcement-title">Announcement 1</h3>
             <p className="announcement-details">
               Announcement details include here. Announcement details include
-              here. Announcement details include here. Announcement details
-              include here. Announcement details include here.
+              here.
             </p>
             <div className="announcement-date">September 29, 2023</div>
           </div>
@@ -100,11 +93,10 @@ function Announcements() {
             alt="announcement-2"
           />
           <div className="announcement-content">
-            <h3 className="announcement-title">Announcement 2</h3>
+            <h3 className="announcement-title">Executive manager positions available</h3>
             <p className="announcement-details">
               Announcement details include here. Announcement details include
-              here. Announcement details include here. Announcement details
-              include here. Announcement details include here.
+              here.
             </p>
             <div className="announcement-date">September 29, 2023</div>
           </div>
@@ -117,16 +109,18 @@ function Announcements() {
             alt="announcement-3"
           />
           <div className="announcement-content">
-            <h3 className="announcement-title">Announcement 3</h3>
+            <h3 className="announcement-title">We are hiring</h3>
             <p className="announcement-details">
               Announcement details include here. Announcement details include
-              here. Announcement details include here. Announcement details
-              include here. Announcement details include here.
+              here.
             </p>
             <div className="announcement-date">September 29, 2023</div>
           </div>
         </div>
       </div>
+
+
+      
     </div>
   );
 }
