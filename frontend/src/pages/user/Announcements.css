@@ -18,8 +18,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   font-weight: 600;
-  text-align: left;
-  margin-left: 8vw;
+  text-align: center;
 }
 
 .tender-container {
@@ -113,4 +112,10 @@
   margin-top: 6vw;
   color: #5a5a5a88;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 425px) {
+  .section-title {
+    font-size: 26px;
+  }
 }
