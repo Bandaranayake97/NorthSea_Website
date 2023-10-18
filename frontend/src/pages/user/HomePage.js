@@ -68,13 +68,10 @@ function HomePage() {
   return (
     <div>
       <div className='home-page'>
-        <div className='home-hero'>
-          <div className='section-content-wrapper'>
-            <h1 className='hero-text-home'><span className='block-text'>Precision Nets for Precision Fishing</span></h1>
-            <p className='hero-para'>Crafting Success, One Net at a Time<span className='new-line'> Elevate Your Fishing Experience with Our Premium Nets!</span></p>
-          </div>
-        </div>
-        {/* <HeroSection><p>Children</p></HeroSection> */}
+        <HeroSection>
+          <h1 className='hero-text-home'><span className='block-text'>Precision Nets for Precision Fishing</span></h1>
+          <p className='hero-para'>Crafting Success, One Net at a Time<span className='new-line'> Elevate Your Fishing Experience with Our Premium Nets!</span></p>
+        </HeroSection>
         <div className="our-story">
           <div className='section-content-wrapper'>
             <h2 className='section-title'>Our Story</h2>

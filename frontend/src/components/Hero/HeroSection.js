@@ -4,8 +4,11 @@ import './HeroSection.css'
 const HeroSection = (props) => {
     return (
         <>
-            <p>HeroSection</p>
-            {props.children}
+            <div className='hero'>
+                <div className='section-content-wrapper'>
+                    {props.children}
+                </div>
+            </div>
         </>
     )
 }
