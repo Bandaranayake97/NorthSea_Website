@@ -14,7 +14,7 @@ const NavBar = ({ isScrolled }) => {
   }
 
   return (
-    <div>
+    <div className='navigation'>
       <div className={`navbar ${isScrolled ? "opaque" : ""}`}>
 
         <div className={clicked ? 'desktop-nav' : 'desktop-nav active-mobile-nav'}>
