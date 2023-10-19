@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
 import "./Announcements.css";
 import { BsFillBookmarkFill } from "react-icons/bs";
 import { GrAnnounce } from "react-icons/gr";
@@ -12,6 +13,13 @@ import HeroSection from '../../components/Hero/HeroSection';
 import WhatsAppIcon from '../../components/WhatsAppIcon/WhatsAppIcon';
 
 function Announcements() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000
+    });
+  }, []);
+
   return (
     <div className="announcement-page">
       <HeroSection>
@@ -27,7 +35,7 @@ function Announcements() {
       <h2 className="section-title">Tenders</h2>
       <div className="tender-container">
         <ul className="tender-list">
-          <p className="tender-item">
+          <p className="tender-item" data-aos="fade-up">
             <span className="bookmark-icon">
               <BsFillBookmarkFill size={25} />
             </span>
@@ -35,7 +43,7 @@ function Announcements() {
             should include here.
           </p>
 
-          <p className="tender-item">
+          <p className="tender-item" data-aos="fade-up">
             <span className="bookmark-icon">
               <BsFillBookmarkFill size={25} />
             </span>
@@ -43,14 +51,14 @@ function Announcements() {
             should include here.
           </p>
 
-          <p className="tender-item">
+          <p className="tender-item" data-aos="fade-up">
             <span className="bookmark-icon">
               <BsFillBookmarkFill size={25} />
             </span>
             About the tender detail should include here. About the tender detail
             should include here.
           </p>
-          <p className="tender-item">
+          <p className="tender-item" data-aos="fade-up">
             <span className="bookmark-icon">
               <BsFillBookmarkFill size={25} />
             </span>
@@ -71,7 +79,7 @@ function Announcements() {
         Announcements
       </h2>
       <div className="announcement-container">
-        <div className="announcement-card">
+        <div className="announcement-card" data-aos="fade-up">
           <img
             src={announcementImage}
             className="announcement-image"
@@ -87,7 +95,7 @@ function Announcements() {
           </div>
         </div>
 
-        <div className="announcement-card">
+        <div className="announcement-card" data-aos="fade-up">
           <img
             src={announcementImage}
             className="announcement-image"
@@ -103,7 +111,7 @@ function Announcements() {
           </div>
         </div>
 
-        <div className="announcement-card">
+        <div className="announcement-card" data-aos="fade-up">
           <img
             src={announcementImage}
             className="announcement-image"
@@ -117,12 +125,13 @@ function Announcements() {
             </p>
             <div className="announcement-date">September 29, 2023</div>
           </div>
-          <WhatsAppIcon />
+
         </div>
+        <WhatsAppIcon />
       </div>
 
 
-      
+
     </div>
   );
 }
