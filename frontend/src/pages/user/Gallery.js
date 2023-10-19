@@ -3,6 +3,7 @@ import './Gallery.css'
 import data from "../../data/index.json";
 
 
+import WhatsAppIcon from '../../components/WhatsAppIcon/WhatsAppIcon';
 
 function Gallery() {
     return (
@@ -35,7 +36,9 @@ function Gallery() {
                         </div>
                     </div>                   
                 </div>
+                
             </div>
+            <WhatsAppIcon />
         </div>       
     );
 }
