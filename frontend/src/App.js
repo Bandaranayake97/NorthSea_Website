@@ -15,6 +15,7 @@ import SignUp from './pages/admin/SignUp';
 import Login from './pages/admin/Login';
 import AdminDashboard from './pages/admin/AdminDashboard';
 
+
 function App() {
 
   const [isScrolled, setIsScrolled] = useState(false)
