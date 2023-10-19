@@ -1,99 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+.container {
+    flex: 1;
+    margin-right: 20px;
+    margin: 4vw;
+}
 
-.gallery--hero {
-    background-image: url("../../../assets/images/hero-image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
+.row-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    height: inherit;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 1vw;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+    /* Add shadow effect */
+}
+
+.image {
     width: 100%;
-    height: 60vh;
-    position: relative;
-    
+    height: 200px;
+    /* Set a specific height */
 }
 
-.gallery--section--container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;   
-    margin-top: 50px;
-    margin-bottom: 50px;
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Make sure the image covers the entire area */
 }
 
-.gallery--section--row--container{
+.content {
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%; 
-    margin-top: 10px;
-    margin-bottom: 10px;
+    /* Make the content a flex container */
 }
-.gallery--section--row{
-    display: grid;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 42.6px;
-    grid-template-columns: repeat(3, 1fr);
-    
-    
-}
-.gallery--section--card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 500px; 
-    max-height: 600px;
-    gap:10px;
-    background: rgb(248, 248, 248);
-    
-}
-.gallery--section--card:hover {
-    border-bottom: 4px solid rgb(162, 162, 177);
-    color: rgb(118, 118, 131);
-    transition: all 0.3s ease-in-out;
-  }
-.gallery--section--img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 500px; 
-    height: 300px;
-    object-fit: cover;
-    
-}
-.gallery--section--img > img{
-    width: 500px;
-    max-height: 300px;
-    object-fit: cover;
-}
-.gallery--section--card--content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 500px; 
-    padding-bottom: 10px;
-    gap:10px;
-}
-.gallery--section--title{
-    font-family: 'Poppins';
-    font-size: 20px;
+
+.title {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
     font-weight: 600;
-    text-align: center;
-    margin-top: -2px;
-    margin-bottom: 5px;
-    color : #3F74A4;
-}
-.gallery--section--description{
-    font-family: 'Poppins';
-    font-size: 17px;
-    font-weight: 300;
-    text-align: center;
-    margin-top: -2px;
     margin-bottom: 10px;
-    color : #000000;
+}
+
+.description {
+
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666;
+}
+
+.date {
+    font-family: "Poppins", sans-serif;
+    margin-right: 2vw;
+    margin-top: 6vw;
+    color: #5a5a5a88;
+    font-size: 1rem;
+    align-self: flex-end;
+    /* Align the date to the right */
+}
+
+@media (max-width: 560px) {
+    .row-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .date {
+        font-size: 0.8rem;
+    }
+}
+
+/* For tablet devices */
+@media (min-width: 561px) and (max-width: 1024px) {
+    .card {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .date {
+        font-size: 0.8rem;
+    }
 }

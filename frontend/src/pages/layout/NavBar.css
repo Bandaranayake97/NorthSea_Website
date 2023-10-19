@@ -120,7 +120,7 @@ a.active-link {
         max-width: 900px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 20px;
@@ -139,14 +139,14 @@ a.active-link {
         background-color: #0400cc;
         position: fixed;
         top: 60px;
-        left: 0px;
+        right: 0px; /* Change this from left to right */
         width: 250px;
         height: 100vh;
         transition: 0.2s ease-in-out;
     }
 
     .active-mobile-nav {
-        left: -350px;
+        right: -350px; /* Change this from left to right */
     }
 
     .nav-menu {
@@ -154,6 +154,7 @@ a.active-link {
         flex-direction: column;
     }
 }
+
 
 @media screen and (max-width: 425px) {
     #mobile {
