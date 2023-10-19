@@ -12,6 +12,7 @@ import BlueMission from '../../images/BlueMission.png';
 import member1 from '../../images/member.png';
 import director1 from '../../images/directorImg.png';
 import managementIcon from '../../images/managementIcon.png';
+import WhatsAppIcon from '../../components/WhatsAppIcon/WhatsAppIcon';
 
 function Aboutus() {
   return (
@@ -112,7 +113,7 @@ function Aboutus() {
           <div>
            
           </div>
-
+          <WhatsAppIcon />
         </div>
     </div>
   );

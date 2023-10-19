@@ -24,10 +24,12 @@ const NavBar = ({ isScrolled }) => {
               <img src={gov} alt="logo" height="50" />
             </div>
             <div className='logo logo-desktop'>
+
               <a href='/' className='logo-link'>North Sea Ltd</a>
             </div>
             <div className='logo1'>
               <img src={logo} alt="logo" height="50" />
+
             </div>
           </div>
 

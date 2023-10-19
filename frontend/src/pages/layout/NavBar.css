@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Poppins:wght@600&display=swap');
 
+
 .navigation {
     width: 100%;
 }
@@ -39,6 +40,8 @@
 }
 
 .logo-link {
+    font-family: 'Bitter', serif;
+    font-size: 20px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: 'Bitter', serif;
