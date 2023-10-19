@@ -78,12 +78,10 @@
   @media screen and (max-width: 820px) {
     .product-card{
       width: 700px;
-      height: 260px;
+      
     }
     .product-details p {
       font-size: 15px;
     }
-
-
-    
   }
+
