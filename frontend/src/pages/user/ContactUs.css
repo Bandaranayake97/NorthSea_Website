@@ -8,37 +8,6 @@
     justify-content: center;
 }
 
-.contact-hero {
-    background-image: url("../../../assets/images/hero-image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    width: 100%;
-    height: 60vh;
-    position: relative;
-    
-}
-
-.contact-hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3); 
-    z-index: 1; 
-  }
- 
-.hero-text {
-    color: rgb(255, 255, 255);
-    font-family: 'Montserrat';
-    font-size: 70px;
-    font-weight: 500;
-    text-align: center;
-   margin-top: 50%; 
-    z-index: 2;
-}
 
 .contact-content{
 
@@ -267,12 +236,6 @@
     height: 40vh;
   }
 
-  .hero-text {
-    font-size: 30px;
-    margin-top: 150px;
-
-  }
-
   .contact-content {
     flex-direction: column;
     height: auto;
@@ -287,17 +250,21 @@
     padding-bottom: 60%;
   }
 
+  
+
   .form-input {
-    width: 100%;
+    width: 80%;
   }
 
   .form-textarea {
-    width: 100%;
+    width: 90%;
+    margin-right: 0;
   }
 
   .submit-button {
-    width: 100%;
+    width: 80%;
     margin-left: 0;
+    align-self: center;
   }
   .image-container {
     display: none; 
@@ -307,11 +274,7 @@
 
 
 @media screen and (min-width: 769px) {
-  .hero-text {
-    margin-top: 250px;
-    margin-left: 270px;
-  }
-
+ 
   .contact-content {
     height: 454px;
   }
@@ -319,6 +282,8 @@
   .map-container {
     padding-bottom: 20%;
   }
+
+  
 
   .form-container {
     flex-direction: column;
@@ -328,14 +293,18 @@
     margin-bottom: 5px;
   }
 
-  .form-input,
-  .form-textarea {
+  .form-input{
     width: 90%;
     margin-left: 10px;
+  }
+
+   .form-textarea {
+    width: 95%;
   }
 
   .submit-button {
     width: 30%;
     margin-left: 10px;
+    align-self: center;
   }
 }
