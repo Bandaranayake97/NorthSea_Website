@@ -36,6 +36,7 @@ import product_img_05 from "../../images/product-photo-05-in-home-page.png"
 import product_img_06 from "../../images/product-photo-06-in-home-page.png"
 import product_img_07 from "../../images/product-photo-07-in-home-page.png"
 import HeroSection from '../../components/Hero/HeroSection';
+import WhatsAppIcon from '../../components/WhatsAppIcon/WhatsAppIcon';
 
 function HomePage() {
 
@@ -75,7 +76,19 @@ function HomePage() {
         <div className="our-story">
           <div className='section-content-wrapper'>
             <h2 className='section-title'>Our Story</h2>
-            <p className='our-story-content'>"From humble beginnings on the shores of North Sea, our company embarked on a journey in [Year]. Over the decades, we've evolved into a trusted name in fishing nets. Our dedication to craftsmanship and innovation has driven us to create nets that withstand the rigors of the sea, empowering fishermen worldwide. Join us as we share our story of passion, growth, and commitment to providing the finest fishing nets."</p>
+            <p className='our-story-content'>"
+              Northsea Ltd has been an integral part of Sri Lanka's rich fishing industry
+              since its establishment in June 2001. As a 100% Treasury-owned Fishnet Manufacturing Company,
+              we have played a pivotal role in supporting the country's fisheries sector, contributing
+              significantly to employment opportunities, income generation, and seafood production.
+              Initially operating solely from our fishnet factory in Gurunagar - Jaffna,
+              we expanded our operations to Lunuwila and Weerawila in 2011, taking over the two factories from
+              Ceynor Foundation Ltd under the purview of the Ministry of Fisheries.
+              With an unwavering commitment to meeting the growing demand for fishnets,
+              we have scaled our operations to cater to 7% of the annual demand, functioning at a capacity of 720 Mt per annum.
+              We remain dedicated to serving the needs of the fishing communities across the marine and freshwater regions of Sri Lanka,
+              playing a crucial role in supporting the livelihood activities of over 150,000 fishermen and their families."
+            </p>
 
           </div>
         </div>
@@ -167,6 +180,7 @@ function HomePage() {
             </div>
           </div>
         </div>
+        <WhatsAppIcon />
       </div>
     </div>
   )
