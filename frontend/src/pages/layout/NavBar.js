@@ -24,12 +24,10 @@ const NavBar = ({ isScrolled }) => {
               <img src={gov} alt="logo" height="50" />
             </div>
             <div className='logo logo-desktop'>
-
               <a href='/' className='logo-link'>North Sea Ltd</a>
             </div>
             <div className='logo1'>
               <img src={logo} alt="logo" height="50" />
-
             </div>
           </div>
 
@@ -65,11 +63,11 @@ const NavBar = ({ isScrolled }) => {
                   isActive ? "nav-link active-link" : "nav-link"
                 }>Contact Us</NavLink>
               </li>
-              <li className='nav-item'>
+              {/* <li className='nav-item'>
                 <NavLink to="/join-us" className={({ isActive }) =>
                   isActive ? "nav-link active-link" : "nav-link"
                 }>Join Us</NavLink>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -90,11 +88,18 @@ const NavBar = ({ isScrolled }) => {
 
         </div>
         <div id='mobile'>
-          {clicked ? <MdClose className='close-icon icon' onClick={toggleIcon} /> : <MdMenu className='menu-icon icon' onClick={toggleIcon} />}
-          <div className='logo'>
-            <a href='/' className='logo-link'>North Sea</a>
+          <div className='mobile-logo-section'>
+            <div className='logo1'>
+              <img src={gov} alt="logo" height="50" />
+            </div>
+            <div className='logo'>
+              <a href='/' className='logo-link'>North Sea</a>
+            </div>
+            <div className='logo1'>
+              <img src={logo} alt="logo" height="50" />
+            </div>
           </div>
-
+          {clicked ? <MdClose className='close-icon icon' onClick={toggleIcon} color='white' /> : <MdMenu className='menu-icon icon' onClick={toggleIcon} color='white' />}
         </div>
       </div>
     </div>
