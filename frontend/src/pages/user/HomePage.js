@@ -36,6 +36,7 @@ import product_img_05 from "../../images/product-photo-05-in-home-page.png"
 import product_img_06 from "../../images/product-photo-06-in-home-page.png"
 import product_img_07 from "../../images/product-photo-07-in-home-page.png"
 import HeroSection from '../../components/Hero/HeroSection';
+import WhatsAppIcon from '../../components/WhatsAppIcon/WhatsAppIcon';
 
 function HomePage() {
 
@@ -179,6 +180,7 @@ function HomePage() {
             </div>
           </div>
         </div>
+        <WhatsAppIcon />
       </div>
     </div>
   )

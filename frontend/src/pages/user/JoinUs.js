@@ -2,6 +2,8 @@ import React from 'react';
 import './JoinUs.css'
 import data from "../../data/index.json";
 
+import WhatsAppIcon from '../../components/WhatsAppIcon/WhatsAppIcon';
+
 function JoinUs() {
 
    
@@ -40,6 +42,7 @@ function JoinUs() {
 
                 ))}
                 </div>
+                <WhatsAppIcon />
             </div>
         </div>
     );

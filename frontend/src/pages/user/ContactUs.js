@@ -4,6 +4,8 @@ import { BsTelephone } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
 import { FaRegAddressBook, FaMapMarkerAlt } from 'react-icons/fa';
 
+import WhatsAppIcon from '../../components/WhatsAppIcon/WhatsAppIcon';
+
 
 function ContactUs() {
 
@@ -328,7 +330,9 @@ function ContactUs() {
                         </button>
                     </form>
                 </div>
+               
             </div>
+            <WhatsAppIcon />
         </div>
     );
 }

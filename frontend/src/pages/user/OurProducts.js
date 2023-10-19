@@ -1,8 +1,11 @@
 import React from 'react'
 import './OurProducts.css'
 import ProductList from '../../components/ProductList/ProductList';
+import WhatsAppIcon from '../../components/WhatsAppIcon/WhatsAppIcon';
 
 console.log(ProductList)
+
+
 
 
 const products = [
@@ -46,6 +49,7 @@ function OurProducts() {
                 </div>
                 
                 <ProductList products={products} />
+                <WhatsAppIcon />
             </div>
 
         </div>

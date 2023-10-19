@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import announcementImage from "../../images/hiring.jpeg";
 
 import HeroSection from '../../components/Hero/HeroSection';
+import WhatsAppIcon from '../../components/WhatsAppIcon/WhatsAppIcon';
 
 function Announcements() {
   return (
@@ -116,6 +117,7 @@ function Announcements() {
             </p>
             <div className="announcement-date">September 29, 2023</div>
           </div>
+          <WhatsAppIcon />
         </div>
       </div>
 
