@@ -4,6 +4,7 @@ import { MdMenu } from 'react-icons/md';
 import { MdClose } from 'react-icons/md';
 import { NavLink } from 'react-router-dom'
 import logo from './logo.png';
+import gov from '../../../src/assetrs/sl-logo.png'
 
 const NavBar = ({ isScrolled }) => {
 
@@ -20,10 +21,15 @@ const NavBar = ({ isScrolled }) => {
         <div className={clicked ? 'desktop-nav' : 'desktop-nav active-mobile-nav'}>
           <div className='logo-section'>
             <div className='logo1'>
-              <img src={logo} alt="logo" width="50" height="50" />
+              <img src={gov} alt="logo" height="50" />
             </div>
             <div className='logo logo-desktop'>
-              <a href='/' className='logo-link'>NORTH-SEA LTD</a>
+
+              <a href='/' className='logo-link'>North Sea Ltd</a>
+            </div>
+            <div className='logo1'>
+              <img src={logo} alt="logo" height="50" />
+
             </div>
           </div>
 
