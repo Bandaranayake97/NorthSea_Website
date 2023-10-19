@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Poppins:wght@600&display=swap');
+
 .navigation {
     width: 100%;
 }
@@ -17,7 +19,7 @@
 }
 
 .navbar.opaque {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .logo-section {
@@ -39,6 +41,8 @@
 .logo-link {
     text-decoration: none;
     color: rgb(255, 255, 255);
+    font-family: 'Bitter', serif;
+    font-size: 24px;
 }
 
 a.active-link {
@@ -107,7 +111,7 @@ a.active-link {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1045px) {
     #mobile {
         width: 100%;
         max-width: 900px;

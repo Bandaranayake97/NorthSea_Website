@@ -37,4 +37,8 @@
         width: 100%;
         padding-bottom: 20px;
     }
+
+    .hero {
+        height: 100vh;
+    }
 }

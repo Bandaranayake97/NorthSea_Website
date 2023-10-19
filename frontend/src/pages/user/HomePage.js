@@ -19,6 +19,8 @@ import article_image_02 from '../../images/article-02.png'
 import article_image_03 from '../../images/article-03.png'
 import article_image_04 from '../../images/article-03.png'
 
+import collage from '../../images/collage.png'
+
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import 'swiper/css'
@@ -75,7 +77,12 @@ function HomePage() {
         <div className="our-story">
           <div className='section-content-wrapper'>
             <h2 className='section-title'>Our Story</h2>
-            <p className='our-story-content'>"From humble beginnings on the shores of North Sea, our company embarked on a journey in [Year]. Over the decades, we've evolved into a trusted name in fishing nets. Our dedication to craftsmanship and innovation has driven us to create nets that withstand the rigors of the sea, empowering fishermen worldwide. Join us as we share our story of passion, growth, and commitment to providing the finest fishing nets."</p>
+            <div className='our-story-content-wrapper'>
+              <p className='our-story-content'>"From humble beginnings on the shores of North Sea, our company embarked on a journey in [Year]. Over the decades, we've evolved into a trusted name in fishing nets. Our dedication to craftsmanship and innovation has driven us to create nets that withstand the rigors of the sea, empowering fishermen worldwide. Join us as we share our story of passion, growth, and commitment to providing the finest fishing nets."</p>
+              <div className='img-container'>
+                <img src={collage} className='our-story-collage' alt='our story collage' />
+              </div>
+            </div>
 
           </div>
         </div>
