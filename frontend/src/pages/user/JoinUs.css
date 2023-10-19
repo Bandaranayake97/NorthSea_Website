@@ -1,12 +1,15 @@
 
+
 .Joinus--section--container{
     flex: 1;
     margin-right: 20px;
     margin: 4vw;
+
 }
 
-.joinus--section{
+.joinus--section {
     display: flex;
+
     flex-wrap: wrap;
     justify-content: space-between;
     
@@ -19,6 +22,7 @@
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 1vw;
+
     background: rgb(158, 158, 196);
 }
 
@@ -27,11 +31,11 @@
     color: var(--darkblue);
 }
 
-.joinus--section--img{
+.joinus--section--img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     position: relative;
     background-image: url("../../images/joinus.png");
     background-repeat: no-repeat;
@@ -40,7 +44,8 @@
     height: 100%;
 
 }
-.joinus--section--img > h1{
+
+.joinus--section--img>h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     color: white;
@@ -48,7 +53,9 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .joinus--section--description{
+
     font-family: 'Poppins';
     font-size: 17px;
     font-weight: 300;
@@ -60,6 +67,7 @@
 }
 .joinus--section--btn--container{
     align-items: center;
+
 }
 
 .btn {
@@ -83,16 +91,19 @@
     -moz-transition: background-color 0.5s;
     -ms-transition: background-color 0.5s;
     -o-transition: background-color 0.5s;
-  }
-  .btn-outline-primary {
+}
+
+.btn-outline-primary {
     color: white;
     background-color: rgb(16, 36, 88);
-    border: 1px solid  rgb(16, 36, 88);
-    
-  }
-  .btn-outline-primary:hover {
+    border: 1px solid rgb(16, 36, 88);
+
+}
+
+.btn-outline-primary:hover {
     color: white;
     background-color: rgb(33, 33, 163);
+
   }
 
 

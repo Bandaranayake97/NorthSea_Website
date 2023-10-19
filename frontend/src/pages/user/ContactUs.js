@@ -9,6 +9,8 @@ import { FaRegAddressBook, FaMapMarkerAlt } from 'react-icons/fa';
 import WhatsAppIcon from '../../components/WhatsAppIcon/WhatsAppIcon';
 import HeroSection from '../../components/Hero/HeroSection';
 
+import HeroSection from '../../components/Hero/HeroSection';
+
 
 function ContactUs() {
 
@@ -67,11 +69,13 @@ function ContactUs() {
         }
     };
     return (
- 
+
         <div className='contact-page'>
+
         <HeroSection>
         <h1 className='hero-text-home'><span className='block-text'>Contact Us</span></h1>
     </HeroSection>
+
 
             <div className='contact-content'>
                 <div className='section-container' data-aos="fade-up">
@@ -294,7 +298,7 @@ function ContactUs() {
                                     placeholder='Enter the subject'
                                     value={formData.subject}
                                     onChange={handleChange}
-                                    
+
                                 />
                                 {errors.subject && <span className='error-message'>{errors.subject}</span>}
                             </div>
@@ -310,7 +314,7 @@ function ContactUs() {
                                     placeholder='Enter your email'
                                     value={formData.email}
                                     onChange={handleChange}
-                                   
+
                                 />
                                 {errors.email && <span className='error-message'>{errors.email}</span>}
                             </div>
@@ -327,7 +331,7 @@ function ContactUs() {
                                 placeholder='Write your message here...'
                                 value={formData.message}
                                 onChange={handleChange}
-                            
+
                             />
                             {errors.message && <span className='error-message'>{errors.message}</span>}
                         </div>
@@ -337,7 +341,7 @@ function ContactUs() {
                         </button>
                     </form>
                 </div>
-               
+
             </div>
             <WhatsAppIcon />
         </div>

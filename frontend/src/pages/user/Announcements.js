@@ -23,7 +23,7 @@ function Announcements() {
   return (
     <div className="announcement-page">
       <HeroSection>
-        <h1 className='hero-text-home'><span className='block-text'>Announcements</span></h1>
+        <h1 className='announcement-text'><span className='block-text'>Announcements</span></h1>
       </HeroSection>
 
 

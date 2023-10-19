@@ -120,14 +120,29 @@ a.active-link {
         max-width: 900px;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: space-between;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 20px;
         padding-right: 20px;
     }
 
+    .mobile-logo-section {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        padding-left: 15px;
+    }
+
+    .logo-link {
+        display: block;
+    }
+
     .logo-desktop {
+        display: none;
+    }
+
+    .logo-section {
         display: none;
     }
 
@@ -136,22 +151,30 @@ a.active-link {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        background-color: #0400cc;
+        background-color: #203864;
+        /*#0400cc*/
         position: fixed;
-        top: 60px;
-        right: 0px; /* Change this from left to right */
-        width: 250px;
+        top: 77px;
+        right: 0px;
+        /* Change this from left to right */
+        width: 200px;
+        padding-left: 20px;
+        /* height: 400px; */
         height: 100vh;
+        /* height: 100%; */
         transition: 0.2s ease-in-out;
     }
 
     .active-mobile-nav {
-        right: -350px; /* Change this from left to right */
+        right: -350px;
+        /* Change this from left to right */
     }
 
     .nav-menu {
         display: flex;
         flex-direction: column;
+        /* background-color: blueviolet; */
+        padding-left: 0;
     }
 }
 

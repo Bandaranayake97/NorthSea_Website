@@ -5,13 +5,15 @@ import data from "../../data/index.json";
 import WhatsAppIcon from '../../components/WhatsAppIcon/WhatsAppIcon';
 import HeroSection from '../../components/Hero/HeroSection';
 
-function JoinUs() {
+import HeroSection from '../../components/Hero/HeroSection';
 
+function JoinUs() {
 
     return (
         <div>
             <HeroSection>
                 <h1 className='hero-text-home'><span className='block-text'>Join Us</span></h1>
+
             </HeroSection>
 
             <div className='Joinus--section--container'>
