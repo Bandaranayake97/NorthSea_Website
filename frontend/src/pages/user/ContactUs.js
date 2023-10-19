@@ -1,15 +1,24 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import './ContactUs.css'
 import { BsTelephone } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
 import { FaRegAddressBook, FaMapMarkerAlt } from 'react-icons/fa';
 
 import WhatsAppIcon from '../../components/WhatsAppIcon/WhatsAppIcon';
+import HeroSection from '../../components/Hero/HeroSection';
 
 import HeroSection from '../../components/Hero/HeroSection';
 
 
 function ContactUs() {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 2000
+        });
+    }, []);
 
     const [selectedLocation, setSelectedLocation] = useState(1);
     const [errors, setErrors] = useState({});
@@ -62,17 +71,14 @@ function ContactUs() {
     return (
 
         <div className='contact-page'>
-            {/* <div className='contact-hero'>
-                <div className='section-content-container'>
-                    <h1 className='hero-text'><span className='block-text'>Contact Us</span></h1>
-                </div>
-            </div> */}
-            <HeroSection>
-                <h1 className='contact-us-text'><span className='product-text'>Contact Us</span></h1>
-            </HeroSection>
+
+        <HeroSection>
+        <h1 className='hero-text-home'><span className='block-text'>Contact Us</span></h1>
+    </HeroSection>
+
 
             <div className='contact-content'>
-                <div className='section-container'>
+                <div className='section-container' data-aos="fade-up">
                     <div className='card'>
                         <h1 className='section-title1'>Colombo</h1>
                         <p className='section-title2'>-Head Office-</p>
@@ -99,7 +105,7 @@ function ContactUs() {
                         </div>
                     </div>
                 </div>
-                <div className='section-container'>
+                <div className='section-container' data-aos="fade-up">
                     <div className='card'>
                         <h1 className='section-title1'>Lunuwila</h1>
                         <p className='section-title2'>-Factory-</p>
@@ -126,7 +132,7 @@ function ContactUs() {
                         </div>
                     </div>
                 </div>
-                <div className='section-container'>
+                <div className='section-container' data-aos="fade-up">
                     <div className='card'>
                         <h1 className='section-title1'>Weerawila</h1>
                         <p className='section-title2'>-Factory-</p>
@@ -153,7 +159,7 @@ function ContactUs() {
                         </div>
                     </div>
                 </div>
-                <div className='section-container'>
+                <div className='section-container' data-aos="fade-up">
                     <div className='card'>
                         <h1 className='section-title1'>Jaffna</h1>
                         <p className='section-title2'>-Factory-</p>
@@ -182,7 +188,7 @@ function ContactUs() {
                 </div>
             </div>
 
-            <div className='map-container'>
+            <div className='map-container' data-aos="fade-up">
 
                 {
                     selectedLocation === 1 ? (
@@ -241,7 +247,7 @@ function ContactUs() {
                 }
             </div>
 
-            <div className='contact-form-section'>
+            <div className='contact-form-section' data-aos="fade-up">
                 <div className='image-container'></div>
                 <div className='form-container'>
                     <h1 className='form-title'>Send us a Message</h1>

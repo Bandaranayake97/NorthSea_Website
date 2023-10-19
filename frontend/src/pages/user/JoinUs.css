@@ -1,61 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
-.Joinus--hero {
-    background-image: url("../../../assets/images/hero-image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    width: 100%;
-    height: 60vh;
-    position: relative;
 
-}
+.Joinus--section--container{
+    flex: 1;
+    margin-right: 20px;
+    margin: 4vw;
 
-.join-us-text {
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 45px;
-    font-weight: 900;
-    text-align: center;
-    width: 100%;
-    margin-top: 100px;
-}
-
-.joinus--section--container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .joinus--section {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
 
-    width: 90%;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    gap: 30px;
-
-
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
 }
 
-.joinus--section--card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 350px;
-    max-height: 800px;
-    padding-bottom: 10px;
-    gap: 10px;
+.joinus--section--card{
+    width: 30%;
+    height: inherit;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 1vw;
+
     background: rgb(158, 158, 196);
 }
 
@@ -73,9 +40,8 @@
     background-image: url("../../images/joinus.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
-    width: 350px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -88,25 +54,20 @@
     margin-bottom: 10px;
 }
 
-.joinus--section--description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    padding-bottom: 10px;
-    max-height: 500px;
+.joinus--section--description{
 
-}
-
-.joinus--section--description>p {
     font-family: 'Poppins';
     font-size: 17px;
     font-weight: 300;
     text-align: center;
     margin-top: -2px;
     margin-bottom: 10px;
-    color: #414141;
+    color : #414141;
+   
+}
+.joinus--section--btn--container{
+    align-items: center;
+
 }
 
 .btn {
@@ -142,4 +103,35 @@
 .btn-outline-primary:hover {
     color: white;
     background-color: rgb(33, 33, 163);
+
+  }
+
+
+  @media (min-width: 561px) and (max-width: 1024px) {
+    
+    .joinus--section--card{
+        width: calc(50% - 20px);
+        margin-right: 20px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
 }
+
+
+@media (max-width: 560px) {
+    .joinus--section{
+        flex-direction: column;
+        
+    }
+
+    .joinus--section--card{
+        width: 100%;
+    }
+}
+
+
+
