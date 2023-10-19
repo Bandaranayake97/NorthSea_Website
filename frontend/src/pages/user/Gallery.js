@@ -18,23 +18,23 @@ function Gallery() {
     }, []);
 
     return (
-        <div className='gallery-page'>
+        <div className='Gallery-page'>
             <HeroSection>
                 <h1 className='hero-text-home'><span className='block-text'>Gallery</span></h1>
             </HeroSection>
 
-            <div className='container'>
-                <div className='row-container'>
+            <div className='Gallery-container'>
+                <div className='Gallery-row-container'>
                     {data?.gallery?.map((item, index) => (
-                        <div key={index} className='card' data-aos="fade-up">
-                            <div className="image">
-                                <img src={item.src} alt="Placeholder" className="card-image" />
+                        <div key={index} className='Gallery-card' data-aos="fade-up">
+                            <div className="Gallery-image">
+                                <img src={item.src} alt="Placeholder" className="Gallery-card-image" />
                             </div>
-                            <div className='content'>
-                                <h3 className="title">{item.title}</h3>
-                                <p className="description">{item.description}</p>
+                            <div className='Gallery-content'>
+                                <h3 className="Gallery-title">{item.title}</h3>
+                                <p className="Gallery-description">{item.description}</p>
                             </div>
-                            <p className="date">{item.date}</p>
+                            <p className="Gallery-date">{item.date}</p>
                         </div>
                     ))}
                 </div>

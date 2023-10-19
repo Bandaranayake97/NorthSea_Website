@@ -32,7 +32,7 @@ function Announcements() {
        */}
 
 
-      <h2 className="section-title">Tenders</h2>
+      <h2 className="Announcement-section-title">Tenders</h2>
       <div className="tender-container">
         <ul className="tender-list">
           <p className="tender-item" data-aos="fade-up">
