@@ -8,13 +8,12 @@ const FooterBar = () => {
   return (
     <div className='footerbar'>
       <div className='footerbar-up-side'>
-       <div className='footer-content-title'>
+        <div className='footer-content-title'>
           <img src={natiion} alt="Mountain"height = "70px" width="50px"/>
-          <p> North Sea LTD </p>
+          <p > North Sea LTD </p>
          <img src={logo} alt="Mountain" height = "70" width="50"/>
         </div>
-        <div className='footer-content-conect'>
-          <div className='footer-content-link'>
+        <div className='footer-content-link'>
             <h3>Quick Link</h3>
             <a href="/">
               <p>Home</p>
@@ -37,8 +36,8 @@ const FooterBar = () => {
             <a href="/join-us">
              <p>Join Us</p>
             </a>
-          </div>
-          <div  className='footer-contact'>
+        </div>
+        <div  className='footer-contact'>
             <h3>Contact us</h3>
             <a  className='footer-contact-us'>
               <BiHome size= '30px' className='footer-contact-us-icon'/> No,45,North Sea, Colombo
@@ -52,10 +51,9 @@ const FooterBar = () => {
             <a  className='footer-contact-us'>
               <BiPhone size= '30px' className='footer-contact-us-icon'/>0113434377
             </a>
-          </div>
-          
-        </div>      
-      </div>
+        </div>
+
+      </div>      
       <div className='footer-down-bar'>
           <p>All  rights reserved. &copy; 2023 Copyright. <span className='company'> North Sea Limited</span></p>
         </div>
