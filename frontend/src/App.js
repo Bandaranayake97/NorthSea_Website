@@ -49,7 +49,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
-      <FooterBar />
+      {/* <FooterBar /> */}
     </AuthProvider>
   );
 }
