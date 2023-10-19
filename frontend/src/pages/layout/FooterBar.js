@@ -53,6 +53,7 @@ const FooterBar = () => {
               <BiPhone size= '30px' className='footer-contact-us-icon'/>0113434377
             </a>
           </div>
+          
         </div>      
       </div>
       <div className='footer-down-bar'>
