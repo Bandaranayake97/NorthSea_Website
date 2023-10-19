@@ -20,7 +20,7 @@ function Gallery() {
     return (
         <div className='gallery-page'>
             <HeroSection>
-                <h1 className='hero-text-home'><span className='block-text'>Gallery</span></h1>
+                <h1 className='gallery-text'><span className='block-text'>Gallery</span></h1>
             </HeroSection>
 
             <div className='container'>
